@@ -1,0 +1,55 @@
+﻿#------------------------------------------------------------------------------
+# Comentarios. Todos los comentarios inician con un caracter de "Gato" (#).
+# Todos las lineas en blanco son ignoradas.
+#
+#El formato de los comandos es: 
+#
+#	Comando Generico: Este comando DEBE iniciar con el caracter '$' y será ejecutado por una emulación de Consola:
+#
+#		${Comando}[-ESPACIO-][Linea de Argumentos]
+#
+#	Comando ESPECIFIVO: Este comando será ejecutado por medio con programación en el servicio:
+#
+#		[ID de Comando][-ESPACIO-][Linea de Argumentos]
+#
+#
+# Campos dinamicos:
+#
+# 	{LST_VER} = Versión actualmente registrada en la estación de trabajo.
+#	{NEW_VER} = Versión a instalarse en la estación de trabajo.
+#------------------------------------------------------------------------------
+
+
+#---------------------------------
+#--- PARA REALIZAR UN UPGRADE. ---
+#---------------------------------
+
+#****************************
+#Respalda la vesion actual y su archivo de configuracion.
+#****************************
+MKDIR c:\aspect\PaletteBck\
+ZIP c:\aspect\palette c:\aspect\PaletteBck\BKP_{LST_VER}.zip
+$COPY C:\aspect\palette\cfg\config.xml c:\aspect\PaletteBck\config_{LST_VER}.xml
+
+#********************************************************
+# Detiene los servicios y elimina e servicio previamentecreado.
+# Elimina el servicio de la carpeta.
+# Elimina la carpeta acutal Palette.
+#********************************************************
+$SC stop PaletteService
+$SC delete PaletteService 
+RMDIR c:\aspect\Palette
+
+
+#********************************************************
+# Crea la carpeta destino.
+# Desempaqueta el contenido del ppaquete descargado
+# Crea el Windows Service
+# Remplaza el archivo de configuración por el que se reaplado anteriormente.
+#********************************************************
+MKDIR c:\aspect\Palette
+UNZIP .\TEMP\Package.zip c:\aspect\Palette
+$COPY /Y c:\aspect\PaletteBck\config_{LST_VER}.xml C:\aspect\palette\cfg\config.xml
+$SC create PaletteService binPath="c:/aspect/palette/bin/service/PaletteService.exe" DisplayName="ISAT Paleta Service V{NEW_VER}" start=auto
+$SC start PaletteService
+#SHORTCUT "Name" "ShortCutPath" "TargetFileLocation" "PathIcon"

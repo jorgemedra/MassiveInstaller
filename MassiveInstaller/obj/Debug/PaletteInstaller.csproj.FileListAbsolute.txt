@@ -1,0 +1,11 @@
+\\vmware-host\Shared Folders\jorgeomarmedratorres\Documents\isat\workspace\bbva.paleta.ccd\paleta\PaletteInstaller\bin\Debug\PaletteInstaller.exe.config
+\\vmware-host\Shared Folders\jorgeomarmedratorres\Documents\isat\workspace\bbva.paleta.ccd\paleta\PaletteInstaller\bin\Debug\PaletteInstaller.exe
+\\vmware-host\Shared Folders\jorgeomarmedratorres\Documents\isat\workspace\bbva.paleta.ccd\paleta\PaletteInstaller\bin\Debug\PaletteInstaller.pdb
+\\vmware-host\Shared Folders\jorgeomarmedratorres\Documents\isat\workspace\bbva.paleta.ccd\paleta\PaletteInstaller\bin\Debug\log4net.dll
+\\vmware-host\Shared Folders\jorgeomarmedratorres\Documents\isat\workspace\bbva.paleta.ccd\paleta\PaletteInstaller\bin\Debug\log4net.xml
+\\vmware-host\Shared Folders\jorgeomarmedratorres\Documents\isat\workspace\bbva.paleta.ccd\paleta\PaletteInstaller\obj\Debug\Interop.IWshRuntimeLibrary.dll
+\\vmware-host\Shared Folders\jorgeomarmedratorres\Documents\isat\workspace\bbva.paleta.ccd\paleta\PaletteInstaller\obj\Debug\PaletteInstaller.csproj.ResolveComReference.cache
+\\vmware-host\Shared Folders\jorgeomarmedratorres\Documents\isat\workspace\bbva.paleta.ccd\paleta\PaletteInstaller\obj\Debug\PaletteInstaller.ServiceMain.resources
+\\vmware-host\Shared Folders\jorgeomarmedratorres\Documents\isat\workspace\bbva.paleta.ccd\paleta\PaletteInstaller\obj\Debug\PaletteInstaller.csproj.GenerateResource.Cache
+\\vmware-host\Shared Folders\jorgeomarmedratorres\Documents\isat\workspace\bbva.paleta.ccd\paleta\PaletteInstaller\obj\Debug\PaletteInstaller.exe
+\\vmware-host\Shared Folders\jorgeomarmedratorres\Documents\isat\workspace\bbva.paleta.ccd\paleta\PaletteInstaller\obj\Debug\PaletteInstaller.pdb

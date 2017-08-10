@@ -1,0 +1,11 @@
+Z:\jorgeomarmedratorres\Documents\JOMT\GitHub\MasiveInstaller\MasiveInstaller\bin\Debug\PaletteInstaller.exe.config
+Z:\jorgeomarmedratorres\Documents\JOMT\GitHub\MasiveInstaller\MasiveInstaller\bin\Debug\PaletteInstaller.exe
+Z:\jorgeomarmedratorres\Documents\JOMT\GitHub\MasiveInstaller\MasiveInstaller\bin\Debug\PaletteInstaller.pdb
+Z:\jorgeomarmedratorres\Documents\JOMT\GitHub\MasiveInstaller\MasiveInstaller\bin\Debug\log4net.xml
+Z:\jorgeomarmedratorres\Documents\JOMT\GitHub\MasiveInstaller\MasiveInstaller\obj\Debug\MasiveInstallerService.csprojResolveAssemblyReference.cache
+Z:\jorgeomarmedratorres\Documents\JOMT\GitHub\MasiveInstaller\MasiveInstaller\obj\Debug\Interop.IWshRuntimeLibrary.dll
+Z:\jorgeomarmedratorres\Documents\JOMT\GitHub\MasiveInstaller\MasiveInstaller\obj\Debug\MasiveInstallerService.csproj.ResolveComReference.cache
+Z:\jorgeomarmedratorres\Documents\JOMT\GitHub\MasiveInstaller\MasiveInstaller\obj\Debug\PaletteInstaller.ServiceMain.resources
+Z:\jorgeomarmedratorres\Documents\JOMT\GitHub\MasiveInstaller\MasiveInstaller\obj\Debug\MasiveInstallerService.csproj.GenerateResource.Cache
+Z:\jorgeomarmedratorres\Documents\JOMT\GitHub\MasiveInstaller\MasiveInstaller\obj\Debug\PaletteInstaller.exe
+Z:\jorgeomarmedratorres\Documents\JOMT\GitHub\MasiveInstaller\MasiveInstaller\obj\Debug\PaletteInstaller.pdb

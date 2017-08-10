@@ -1,0 +1,37 @@
+﻿#------------------------------------------------------------------------------
+# Comentarios. Todos los comentarios inician con un caracter de "Gato" (#).
+# Todos las lineas en blanco son ignoradas.
+#
+#El formato de los comandos es: 
+#
+#	Comando Generico: Este comando DEBE iniciar con el caracter '$' y será ejecutado por una emulación de Consola:
+#
+#		${Comando}[-ESPACIO-][Linea de Argumentos]
+#
+#	Comando ESPECIFIVO: Este comando será ejecutado por medio con programación en el servicio:
+#
+#		[ID de Comando][-ESPACIO-][Linea de Argumentos]
+#
+#
+# Campos dinamicos:
+#
+# 	{LST_VER} = Versión actualmente registrada en la estación de trabajo.
+#	{NEW_VER} = Versión a instalarse en la estación de trabajo.
+#------------------------------------------------------------------------------
+
+#********************************************************
+#--- PARA REALIZAR UNA NUEVA INSTALACION. ---
+#
+# 1.- Crea la carpeta destino.
+# 2.- Desempaqueta el contenido del ppaquete descargado.
+# 3.- Crea el Windows Service de PaletaService.
+# 4.- Crea el Windows Service de PaletaJTapiService.
+# 5.- Crea el ShortCut para el Paleta Desktop.
+#********************************************************
+
+MKDIR c:\aspect\Palette
+UNZIP .\TEMP\Package.zip c:\aspect\Palette
+$SC create PaletteService binPath="c:\aspect\palette\bin\service\PaletteService.exe" DisplayName="ISAT Paleta Service V{NEW_VER}" start=auto
+$c:\aspect\palette\bin\service_jtapi\jPaletaBVVA\bin\InstallTestWrapper-NT.bat
+$SC start PaletteService
+SHORTCUT "Paleta Desktop.lnk" "C:\Users\Administrator\Desktop" "C:\aspect\Palette\bin\desktop\PaletteDesktop.exe" "C:\aspect\Palette\bin\desktop\img\favicon.ico"
